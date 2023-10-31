@@ -31,18 +31,6 @@ function ListaDeTareas() {
         setTareas(tareasActualiazadas);
     }
 
-    const onDragEnd = result => {
-        if (!result.destination) {
-            return; // No hay destino, no hacemos nada
-        }
-
-        const items = Array.from(tareas);
-        const [reorderedItem] = items.splice(result.source.index, 1);
-        items.splice(result.destination.index, 0, reorderedItem);
-
-        setTareas(items);
-    };
-
     return (
         <>
             <TareaFormulario onSubmit={agregarTarea} />
