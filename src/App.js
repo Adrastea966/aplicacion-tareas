@@ -1,6 +1,6 @@
 import './App.css';
 import ListaDeTareas from './componentes/ListaDeTareas';
-import logo from './images/Logo2_svg.svg';
+import logo from './images/check-icon-person.svg';
 
 function App() {
   return (
